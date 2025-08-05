@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إحصائيات الدعوات - يباب</title>
+    <link rel="stylesheet" href="statistics-styles.css">
+</head>
+<body>
+    <!-- شريط علوي -->
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="5787443937617759273.png" alt="يباب" class="logo-img">
+        </a>
+        <h1 class="page-title">إحصائيات الدعوات</h1>
+        <div class="header-spacer"></div>
+    </header>
+
+    <!-- زر العودة العائم -->
+    <div class="floating-home-btn" onclick="goBack()">
+        <div class="home-icon">
+            <div class="home-roof"></div>
+            <div class="home-body"></div>
+            <div class="home-door"></div>
+        </div>
+    </div>
+
+    <!-- بطاقات الإحصائيات الرئيسية -->
+    <section class="stats-overview">
+        <div class="stat-card total">
+            <div class="stat-icon">👥</div>
+            <div class="stat-content">
+                <div class="stat-number" id="totalGuests">8</div>
+                <div class="stat-label">إجمالي الضيوف</div>
+            </div>
+        </div>
+        
+        <div class="stat-card attendance">
+            <div class="stat-icon">✅</div>
+            <div class="stat-content">
+                <div class="stat-number" id="attendanceCount">2</div>
+                <div class="stat-label">حضور مؤكد</div>
+            </div>
+        </div>
+        
+        <div class="stat-card confirmed">
+            <div class="stat-icon">📋</div>
+            <div class="stat-content">
+                <div class="stat-number" id="confirmedCount">2</div>
+                <div class="stat-label">تأكيد الحضور</div>
+            </div>
+        </div>
+        
+        <div class="stat-card declined">
+            <div class="stat-icon">❌</div>
+            <div class="stat-content">
+                <div class="stat-number" id="declinedCount">1</div>
+                <div class="stat-label">اعتذار</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الرسم البياني -->
+    <section class="chart-section">
+        <div class="chart-container">
+            <h2 class="section-title">توزيع حالات الدعوات</h2>
+            <div class="chart-wrapper">
+                <div class="pie-chart-container">
+                    <div class="pie-chart">
+                        <div class="slice attendance" data-percent="25" data-label="حضور مؤكد" data-count="2"></div>
+                        <div class="slice confirmed" data-percent="25" data-label="تأكيد الحضور" data-count="2"></div>
+                        <div class="slice waiting" data-percent="25" data-label="في الانتظار" data-count="2"></div>
+                        <div class="slice sent" data-percent="12.5" data-label="تم الإرسال" data-count="1"></div>
+                        <div class="slice declined" data-percent="12.5" data-label="اعتذار" data-count="1"></div>
+                    </div>
+                    <div class="chart-center">
+                        <div class="total-number">8</div>
+                        <div class="total-label">إجمالي الضيوف</div>
+                    </div>
+                </div>
+                <div class="chart-legend">
+                    <div class="legend-item attendance">
+                        <div class="legend-color"></div>
+                        <span class="legend-text">حضور مؤكد (2)</span>
+                        <span class="legend-percent">25%</span>
+                    </div>
+                    <div class="legend-item confirmed">
+                        <div class="legend-color"></div>
+                        <span class="legend-text">تأكيد الحضور (2)</span>
+                        <span class="legend-percent">25%</span>
+                    </div>
+                    <div class="legend-item waiting">
+                        <div class="legend-color"></div>
+                        <span class="legend-text">في الانتظار (2)</span>
+                        <span class="legend-percent">25%</span>
+                    </div>
+                    <div class="legend-item sent">
+                        <div class="legend-color"></div>
+                        <span class="legend-text">تم الإرسال (1)</span>
+                        <span class="legend-percent">12.5%</span>
+                    </div>
+                    <div class="legend-item declined">
+                        <div class="legend-color"></div>
+                        <span class="legend-text">اعتذار (1)</span>
+                        <span class="legend-percent">12.5%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- إحصائيات تفصيلية -->
+    <section class="detailed-stats">
+        <div class="stats-grid">
+            <div class="detail-card">
+                <div class="detail-header">
+                    <h3>معدل الاستجابة</h3>
+                    <div class="percentage">62.5%</div>
+                </div>
+                <div class="detail-description">
+                    5 من أصل 8 ضيوف قاموا بالرد على الدعوة
+                </div>
+            </div>
+            
+            <div class="detail-card">
+                <div class="detail-header">
+                    <h3>إجمالي الدعوات المرسلة</h3>
+                    <div class="percentage">18</div>
+                </div>
+                <div class="detail-description">
+                    مجموع دعوات جميع الضيوف المسجلين
+                </div>
+            </div>
+            
+            <div class="detail-card">
+                <div class="detail-header">
+                    <h3>متوسط الدعوات للضيف</h3>
+                    <div class="percentage">2.25</div>
+                </div>
+                <div class="detail-description">
+                    المتوسط الحسابي لعدد الدعوات لكل ضيف
+                </div>
+            </div>
+            
+            <div class="detail-card">
+                <div class="detail-header">
+                    <h3>الحضور المتوقع</h3>
+                    <div class="percentage">50%</div>
+                </div>
+                <div class="detail-description">
+                    4 ضيوف من المتوقع حضورهم للمناسبة
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قائمة الحالات -->
+    <section class="status-breakdown">
+        <h2 class="section-title">تفصيل الحالات</h2>
+        <div class="status-list">
+            <div class="status-item attendance">
+                <div class="status-info">
+                    <div class="status-name">حضور مؤكد</div>
+                    <div class="status-count">2 ضيف</div>
+                </div>
+                <div class="status-bar">
+                    <div class="status-fill" style="width: 25%;"></div>
+                </div>
+            </div>
+            
+            <div class="status-item confirmed">
+                <div class="status-info">
+                    <div class="status-name">تأكيد الحضور</div>
+                    <div class="status-count">2 ضيف</div>
+                </div>
+                <div class="status-bar">
+                    <div class="status-fill" style="width: 25%;"></div>
+                </div>
+            </div>
+            
+            <div class="status-item waiting">
+                <div class="status-info">
+                    <div class="status-name">في الانتظار</div>
+                    <div class="status-count">2 ضيف</div>
+                </div>
+                <div class="status-bar">
+                    <div class="status-fill" style="width: 25%;"></div>
+                </div>
+            </div>
+            
+            <div class="status-item sent">
+                <div class="status-info">
+                    <div class="status-name">تم الإرسال</div>
+                    <div class="status-count">1 ضيف</div>
+                </div>
+                <div class="status-bar">
+                    <div class="status-fill" style="width: 12.5%;"></div>
+                </div>
+            </div>
+            
+            <div class="status-item declined">
+                <div class="status-info">
+                    <div class="status-name">اعتذار</div>
+                    <div class="status-count">1 ضيف</div>
+                </div>
+                <div class="status-bar">
+                    <div class="status-fill" style="width: 12.5%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="statistics-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظام إدارة الدعوات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- شريط علوي -->
+    <header class="header">
+        <button class="stats-btn" onclick="window.location.href='statistics.html'">الإحصائيات</button>
+        <a href="#" class="logo">
+            <img src="5787443937617759273.png" alt="يباب" class="logo-img">
+        </a>
+        <h1 class="page-title">الدعوات</h1>
+    </header>
+
+    <!-- منطقة البحث والفلاتر -->
+    <section class="search-section">
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="اسم / رقم تعريفي للبحث..." id="searchInput">
+            <select class="sort-select" id="sortSelect">
+                <option value="name">ترتيب بالاسم</option>
+                <option value="status">ترتيب حسب الحالة</option>
+                <option value="date">ترتيب حسب التاريخ</option>
+            </select>
+        </div>
+        
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">الكل <span class="filter-count">(8)</span></button>
+            <button class="filter-btn attendance" data-filter="attendance">حضور <span class="filter-count">(2)</span></button>
+            <button class="filter-btn confirmed" data-filter="confirmed">تأكيد <span class="filter-count">(2)</span></button>
+            <button class="filter-btn sent" data-filter="sent">إرسال <span class="filter-count">(1)</span></button>
+            <button class="filter-btn waiting" data-filter="waiting">انتظار <span class="filter-count">(2)</span></button>
+            <button class="filter-btn declined" data-filter="declined">اعتذار <span class="filter-count">(1)</span></button>
+        </div>
+    </section>
+
+    <!-- شبكة البطاقات -->
+    <main class="cards-container" id="cardsContainer">
+        <!-- البطاقات ستُضاف هنا بواسطة JavaScript -->
+    </main>
+
+    <!-- زر تحميل البيانات -->
+    <footer class="download-section">
+        <button class="download-btn" onclick="downloadGuestData()">
+            <div class="download-icon">
+                <div class="download-arrow">↓</div>
+                <div class="download-line"></div>
+            </div>
+        </button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
