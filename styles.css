@@ -45,7 +45,7 @@ body {
     color: #2C2C2C;
     margin: 0;
     position: absolute;
-    left: 20px;
+    right: 20px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -95,7 +95,7 @@ body {
     font-family: 'Amiri', serif;
     white-space: nowrap;
     position: absolute;
-    right: 20px;
+    left: 20px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -522,25 +522,44 @@ body {
     .header {
         height: 70px;
         padding: 10px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
     }
     
     .page-title {
         font-size: 22px;
-        left: 15px;
+        position: static;
+        transform: none;
+        margin: 0;
+        order: 3;
+        text-align: right;
+        padding-right: 10px;
     }
     
     .logo {
+        position: static;
+        transform: none;
+        order: 2;
         height: 40px;
+        flex: 1;
+        display: flex;
+        justify-content: center;
     }
     
     .logo-img {
         height: 40px;
+        max-width: 120px;
     }
     
     .stats-btn {
+        position: static;
+        transform: none;
         padding: 8px 15px;
         font-size: 14px;
-        right: 15px;
+        order: 1;
+        margin: 0;
     }
     
     .header-spacer {
