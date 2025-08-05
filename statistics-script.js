@@ -1,4 +1,4 @@
 // العودة للصفحة الرئيسية
 function goBack() {
-    window.location.href = 'invitation-management.html';
+    window.location.href = 'index.html';
 }
