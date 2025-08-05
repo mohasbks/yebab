@@ -219,29 +219,29 @@ body {
 }
 
 .filter-btn.sent {
-    border-color: #9E9E9E;
+    border-color: #000000;
 }
 
 .filter-btn.sent.active {
-    background-color: #9E9E9E;
+    background-color: #000000;
     color: white;
 }
 
 .filter-btn.waiting {
-    border-color: #FF9800;
+    border-color: #000000;
 }
 
 .filter-btn.waiting.active {
-    background-color: #FF9800;
+    background-color: #000000;
     color: white;
 }
 
 .filter-btn.declined {
-    border-color: #F44336;
+    border-color: #000000;
 }
 
 .filter-btn.declined.active {
-    background-color: #F44336;
+    background-color: #000000;
     color: white;
 }
 
