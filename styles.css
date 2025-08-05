@@ -194,55 +194,55 @@ body {
 .filter-btn.active {
     background: linear-gradient(135deg, #000000 0%, #000000 50%, #000000 100%);
     color: white;
-    border-color: #000000;
+    border-color: #F4D03F;
     box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
     border-color: #1A1A1A;
     box-shadow: 0 4px 15px rgba(26, 26, 26, 0.2);
 }
 
 .filter-btn.attendance {
-    border-color: #000000;
+    border-color: #F4D03F;
 }
 
 .filter-btn.attendance.active {
-    background-color: #000000;
-    color: white;
+    background-color: #F4D03F;
+    color: #F4D03F;
 }
 
 .filter-btn.confirmed {
-    border-color: #000000;
+    border-color: #F4D03F;
 }
 
 .filter-btn.confirmed.active {
-    background-color: #000000;
-    color: white;
+    background-color: #F4D03F;
+    color: #F4D03F;
 }
 
 .filter-btn.sent {
-    border-color: #000000;
+    border-color: #F4D03F;
 }
 
 .filter-btn.sent.active {
-    background-color: #000000;
-    color: white;
+    background-color: #F4D03F;
+    color: #F4D03F;
 }
 
 .filter-btn.waiting {
-    border-color: #000000;
+    border-color: #F4D03F;
 }
 
 .filter-btn.waiting.active {
-    background-color: #000000;
-    color: white;
+    background-color: #F4D03F;
+    color: #F4D03F;
 }
 
 .filter-btn.declined {
-    border-color: #000000;
+    border-color: #F4D03F;
 }
 
 .filter-btn.declined.active {
-    background-color: #000000;
-    color: white;
+    background-color: #F4D03F;
+    color: #F4D03F;
 }
 
 /* شبكة البطاقات */
