@@ -20,26 +20,30 @@ body {
 .header {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
-    padding: 15px 40px;
+    padding: 15px 20px;
     height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: relative;
     box-shadow: 0 4px 20px rgba(0,0,0,0.08);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    position: relative;
 }
 
-.header-spacer {
-    flex: 1;
-    order: 1;
+.page-title {
+    font-family: 'Lateef', serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #2C2C2C;
+    margin: 0;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .logo {
     position: absolute;
-    right: 30px;
+    left: 50%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
     height: 50px;
     display: flex;
     align-items: center;
@@ -58,18 +62,21 @@ body {
     filter: brightness(0) saturate(100%) invert(84%) sepia(58%) saturate(2476%) hue-rotate(2deg) brightness(97%) contrast(91%);
 }
 
-.page-title {
-    font-family: 'Lateef', serif;
-    font-size: 28px;
-    font-weight: 600;
-    color: #2C2C2C;
-    text-align: center;
+/* زر العودة للصفحة الرئيسية */
+.home-btn {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 0;
-    order: 2;
-    letter-spacing: 0.5px;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #2C2C2C;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* زر المنزل العائم */
